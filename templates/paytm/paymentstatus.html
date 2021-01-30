@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment status</title>
+</head>
+<body>
+    <!-- style it however you want -->
+    <!-- the 'response' is coming from the context -->
+    {% if response.STATUS == "TXN_SUCCESS" %}
+    <h1>Transaction successful</h1>
+    {% else %}
+    <h1>Transaction Failed</h1>
+    {% endif %}
+    <a href="http://localhost:3000"><button>Go Home</button></a>
+</body>
+</html>
